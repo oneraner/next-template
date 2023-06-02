@@ -1,0 +1,5 @@
+{
+  "reporter": ["lcov", "text-summary"],
+  "report-dir": "./coverage/storybook",
+  "temp-dir": "./coverage/storybook"
+}
