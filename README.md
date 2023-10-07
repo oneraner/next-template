@@ -6,6 +6,8 @@ This template is designed for building projects with Next.js, a popular React fr
 
 - **TailwindCSS 3.3.2**: TailwindCSS is a utility-first CSS framework that allows you to quickly build responsive and customizable user interfaces. This template includes version 3.3.2 of TailwindCSS.
 
+- **Vitest**: The template is set up to use Vite, a fast and opinionated build tool that enhances your development experience by providing near-instant development server start and quick HMR (Hot Module Replacement) updates.
+
 - **TypeScript**: The template is set up to use TypeScript, a typed superset of JavaScript that enhances your development experience by catching errors and providing better tooling support.
 
 You can use this template as a starting point for your Next.js project. Simply clone the repository and start building your application based on the provided structure and dependencies.
