@@ -49,7 +49,7 @@ export default function Page() {
           className="download"
           onClick={() => {
             if (typeof window !== "undefined") {
-              window.dataLayer?.push({
+              (window as any).dataLayer.push({
                 type: "download",
                 value: "test000",
                 value1: "test111",
