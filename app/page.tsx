@@ -1,8 +1,21 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
+
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
 
 export default function Page() {
+  useEffect(()=>{
+    window.dataLayer.push({
+      type: "profile",
+      userId: "test12345",
+      merchantId: "test112345",
+    });
+  },[])
   return (
     <main>
       <h1>Hello, Next.js!</h1>
@@ -49,7 +62,7 @@ export default function Page() {
           className="download"
           onClick={() => {
             if (typeof window !== "undefined") {
-              (window as any).dataLayer.push({
+              window.dataLayer.push({
                 type: "download",
                 value: "test000",
                 value1: "test111",
