@@ -12,7 +12,6 @@ export default function Page() {
   useEffect(()=>{
     window.dataLayer.push({
       type: "profile",
-      user_id:'test23456',
       userId: "test12345",
       merchantId: "test112345",
     });
