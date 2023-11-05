@@ -12,8 +12,8 @@ export default function Page() {
   useEffect(()=>{
     window.dataLayer.push({
       type: "profile",
-      userId: "test12345",
-      merchantId: "test112345",
+      userId: Math.floor(Math.random() * 100000000).toString().substring(0, 8),
+      merchantId: Math.floor(Math.random() * 10000000000).toString().substring(0, 12),
     });
   },[])
   return (
